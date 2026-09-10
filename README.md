@@ -11,7 +11,7 @@ sphinx
 py -3.11 -m venv cubebraiddoc
 
 # 激活
-ros2doc\Scripts\activate
+cubebraiddoc\Scripts\activate
 ```
 2. 编译项目
 ```bash
