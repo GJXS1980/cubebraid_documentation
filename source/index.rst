@@ -1,25 +1,20 @@
 CubeBraid 装卸柜机器人技术文档
 ==============================
 
-CubeBraid SDK 面向集装箱装卸柜机器人系统，提供 AGV、工业相机、机器人、PLC、倾角仪、运动学、参数管理和日志等基础能力。本网站采用 ROS 2 Documentation 使用的 Sphinx + Read the Docs 模板，内容以 CubeBraid SDK 的公开头文件、示例程序和脚本为准。
+CubeBraid SDK 面向集装箱装卸柜机器人系统，提供 AGV、工业相机、机器人、PLC、倾角仪、运动学、参数管理和日志等基础能力。本站内容以 CubeBraid SDK 的公开头文件、示例程序和脚本为准。
 
 .. toctree::
    :titlesonly:
    :maxdepth: 2
    :hidden:
 
-   About-CubeBraid
-   Get-Started
-   SDK-Architecture
-   Submodules
-   API-Reference
-   Guides/Container-Workflow
-   Guides/Configuration
-   Guides/Safety
-   Guides/Deployment
-   Developer-Tools
-   Releases
-   Contact
+   系统总体架构与工程设计 <System-Architecture>
+   快速入门 <Get-Started>
+   SDK 参考 <API-Reference>
+   跨语言集成与部署指南 <Integration-and-Deployment>
+   安全须知 <Guides/Safety>
+   版本与变更 <Releases>
+   联系与支持 <Contact>
 
 快速开始
 --------
@@ -29,8 +24,8 @@ CubeBraid SDK 面向集装箱装卸柜机器人系统，提供 AGV、工业相�
 * :doc:`产品与能力 <About-CubeBraid>`：了解 SDK 在装卸柜机器人中的职责边界。
 * :doc:`安装与构建 <Get-Started/Installation>`：从 GitHub 获取 SDK，并使用 CMake 生成 demo。
 * :doc:`第一个程序 <Get-Started/Quickstart>`：先从不连接硬件的参数读取和算法调用开始。
-* :doc:`装卸柜业务流程 <Guides/Container-Workflow>`：了解视觉、AGV、机器人和 PLC 如何协同。
-* :doc:`模块总览 <Submodules>`：根据设备或功能进入对应的 API 参考。
+* :ref:`装卸柜业务流程 <container-workflow>`：了解视觉、AGV、机器人和 PLC 如何协同。
+* :ref:`模块总览 <module-overview>`：根据设备或功能进入对应的 API 参考。
 
 核心模块
 --------
@@ -58,5 +53,5 @@ SDK 同时提供原生 C++ 接口和部分 C ABI 接口。C ABI 适合 Python ``
 
 当前页面对应 CubeBraid SDK 仓库中的接口快照。若头文件、动态库和本文档版本不一致，请优先以随 SDK 发布的 ``include`` 目录头文件为准，并记录 SDK commit 或发布版本。
 
-* `CubeBraid 官方网站 <https://www.cubebraid.com/>`__
+* `CubeBraid 官方网站 <https://www.rossum-robot.com/product/776.html>`__
 * `CubeBraid SDK GitHub 仓库 <https://github.com/GJXS1980/cubebraid_sdk>`__

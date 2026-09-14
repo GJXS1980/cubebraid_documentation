@@ -2,6 +2,39 @@
     max-width: 64rem;
 }
 
+/* 左侧品牌区：站点标题、方块标志和搜索框。 */
+.cubebraid-sidebar-logo {
+    display: flex;
+    justify-content: center;
+    margin: 0.65rem auto 0.85rem;
+}
+
+.cubebraid-sidebar-logo a {
+    align-items: center;
+    display: flex;
+    height: 9rem;
+    justify-content: center;
+    width: 9rem;
+}
+
+.cubebraid-sidebar-logo img {
+    display: block;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .cubebraid-sidebar-logo {
+        margin: 0.55rem auto 0.75rem;
+    }
+
+    .cubebraid-sidebar-logo a {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
 .pageheader {
     background: #f4f7fb;
     border-bottom: 1px solid #d8e0ea;
