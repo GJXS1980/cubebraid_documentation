@@ -238,7 +238,7 @@ html_js_files = []
 #
 # source/favicon.ico
 
-html_favicon = 'favicon.ico'
+html_favicon = 'source/_static/favicon.ico'
 
 
 # ============================================================================
